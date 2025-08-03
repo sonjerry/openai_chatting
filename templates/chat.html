@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>랜덤채팅방</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div id="nickname-container">
+    <h2>닉네임을 입력하세요</h2>
+    <input type="text" id="nickname-input" placeholder="닉네임" required />
+    <button id="nickname-submit">입장</button>
+    <button id="match-btn" style="display:none;">랜덤 채팅 매칭</button>
+    <div id="matching-feedback" style="display:none; margin-top:10px; color:#4f8cff; font-weight:bold;"></div>
+  </div>
+
+  <div id="chat-container" style="display: none;">
+    <header>오픈채팅방</header>
+
+    <div id="chat-box"></div>
+
+    <form id="chat-form">
+      <input type="text" id="chat-input" placeholder="메시지를 입력하세요..." required autocomplete="off" />
+      <button type="submit">전송</button>
+    </form>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
