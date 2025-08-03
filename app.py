@@ -30,7 +30,7 @@ def index():
 
 # 대화내역 저장
 def save_message_csv(username, role, message):
-    log_path = os.path.join(basedir, "chatting_log.csv")
+    log_path = os.path.join(basedir, "chatting_log.txt")
     with open(log_path, "a", newline='', encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow([datetime.now().isoformat(), username, role, message])
