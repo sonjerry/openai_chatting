@@ -6,6 +6,7 @@ import csv
 from datetime import datetime
 import re
 
+#바뀐점
 
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
